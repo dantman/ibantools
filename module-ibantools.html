@@ -26,7 +26,7 @@
 
 <nav >
     
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-ibantools.html">ibantools</a><ul class='methods'><li data-type='method'><a href="module-ibantools.html#.composeIBAN">composeIBAN</a></li><li data-type='method'><a href="module-ibantools.html#.electronicFormatIBAN">electronicFormatIBAN</a></li><li data-type='method'><a href="module-ibantools.html#.extractBIC">extractBIC</a></li><li data-type='method'><a href="module-ibantools.html#.extractIBAN">extractIBAN</a></li><li data-type='method'><a href="module-ibantools.html#.friendlyFormatIBAN">friendlyFormatIBAN</a></li><li data-type='method'><a href="module-ibantools.html#.getCountrySpecifications">getCountrySpecifications</a></li><li data-type='method'><a href="module-ibantools.html#.isValidBBAN">isValidBBAN</a></li><li data-type='method'><a href="module-ibantools.html#.isValidBIC">isValidBIC</a></li><li data-type='method'><a href="module-ibantools.html#.isValidIBAN">isValidIBAN</a></li></ul></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-ibantools.html">ibantools</a><ul class='methods'><li data-type='method'><a href="module-ibantools.html#.composeIBAN">composeIBAN</a></li><li data-type='method'><a href="module-ibantools.html#.electronicFormatIBAN">electronicFormatIBAN</a></li><li data-type='method'><a href="module-ibantools.html#.extractBIC">extractBIC</a></li><li data-type='method'><a href="module-ibantools.html#.extractIBAN">extractIBAN</a></li><li data-type='method'><a href="module-ibantools.html#.friendlyFormatIBAN">friendlyFormatIBAN</a></li><li data-type='method'><a href="module-ibantools.html#.getCountrySpecifications">getCountrySpecifications</a></li><li data-type='method'><a href="module-ibantools.html#.isSEPACountry">isSEPACountry</a></li><li data-type='method'><a href="module-ibantools.html#.isValidBBAN">isValidBBAN</a></li><li data-type='method'><a href="module-ibantools.html#.isValidBIC">isValidBIC</a></li><li data-type='method'><a href="module-ibantools.html#.isValidIBAN">isValidIBAN</a></li></ul></li></ul>
 </nav>
 
 <div id="main">
@@ -74,7 +74,7 @@
 
     
     <dt class="tag-version">Version:</dt>
-    <dd class="tag-version"><ul class="dummy"><li>3.0.0</li></ul></dd>
+    <dd class="tag-version"><ul class="dummy"><li>3.1.0</li></ul></dd>
     
 
     
@@ -193,7 +193,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line81">line 81</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line103">line 103</a>
     </li></ul></dd>
     
 
@@ -335,7 +335,7 @@ ibantools.composeIBAN("NL", "ABNA0417164300");</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line138">line 138</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line160">line 160</a>
     </li></ul></dd>
     
 
@@ -501,7 +501,7 @@ ibantools.electronicFormatIBAN("NL91 ABNA 0417 1643 00");</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line282">line 282</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line304">line 304</a>
     </li></ul></dd>
     
 
@@ -665,7 +665,7 @@ ibantools.extractBIC("ABNANL2A");</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line103">line 103</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line125">line 125</a>
     </li></ul></dd>
     
 
@@ -829,7 +829,7 @@ ibantools.extractIBAN("NL91 ABNA 0417 1643 00");</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line160">line 160</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line182">line 182</a>
     </li></ul></dd>
     
 
@@ -1021,7 +1021,7 @@ ibantools.friendlyFormatIBAN("NL91ABNA0417164300","-");</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line245">line 245</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line267">line 267</a>
     </li></ul></dd>
     
 
@@ -1113,7 +1113,7 @@ $("#countries").select(function() {
 
         
 <div class="param-desc">
-    Object [countryCode: string]CountrySpec -> {chars: :number, bban_regexp: string, IBANRegistry: boolean}
+    Object [countryCode: string]CountrySpec -> {chars: :number, bban_regexp: string, IBANRegistry: boolean, SEPA: boolean}
 </div>
 
 
@@ -1125,6 +1125,173 @@ $("#countries").select(function() {
     <dd>
         
 <span class="param-type">CountryMap</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".isSEPACountry"><span class="type-signature">(static) </span>isSEPACountry<span class="signature">(countryCode)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line84">line 84</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Validate if country code is from a SEPA country
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Examples</h5>
+    
+    <pre class="prettyprint"><code>// returns true
+ibantools.isSEPACountry("NL");</code></pre>
+
+    <pre class="prettyprint"><code>// returns false
+ibantools.isSEPACountry("PK");</code></pre>
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>countryCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Country code</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    valid
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
 
 
     </dd>
@@ -1341,7 +1508,7 @@ ibantools.isValidBBAN("A7NA0517164300", "NL");</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line267">line 267</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line289">line 289</a>
     </li></ul></dd>
     
 
@@ -1684,7 +1851,7 @@ ibantools.isValidIBAN("NL92ABNA0517164300");</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Apr 05 2020 22:15:43 GMT+0200 (Central European Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Jun 21 2020 12:30:03 GMT+0200 (Central European Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
