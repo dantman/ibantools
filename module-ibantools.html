@@ -13,6 +13,7 @@
     <![endif]-->
     <link type="text/css" rel="stylesheet" href="styles/prettify.css">
     <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -54,7 +55,7 @@
         <div class="container-overview">
         
             
-                <div class="description">Validation, extraction and creation of IBAN, BBAN, BIC/SWIFT numbers plus some other helpful stuff</div>
+                <div class="description usertext">Validation, extraction and creation of IBAN, BBAN, BIC/SWIFT numbers plus some other helpful stuff</div>
             
 
             
@@ -74,7 +75,7 @@
 
     
     <dt class="tag-version">Version:</dt>
-    <dd class="tag-version"><ul class="dummy"><li>3.1.0</li></ul></dd>
+    <dd class="tag-version"><ul class="dummy"><li>3.2.0</li></ul></dd>
     
 
     
@@ -193,7 +194,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line103">line 103</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line104">line 104</a>
     </li></ul></dd>
     
 
@@ -232,7 +233,7 @@
 
 
 
-<div class="description">
+<div class="description usertext">
     composeIBAN
 </div>
 
@@ -335,7 +336,7 @@ ibantools.composeIBAN("NL", "ABNA0417164300");</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line160">line 160</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line161">line 161</a>
     </li></ul></dd>
     
 
@@ -374,7 +375,7 @@ ibantools.composeIBAN("NL", "ABNA0417164300");</code></pre>
 
 
 
-<div class="description">
+<div class="description usertext">
     Get IBAN in electronic format (no spaces)
 IBAN validation is not performed.
 When non-string value for IBAN is provided, returns null.
@@ -501,7 +502,7 @@ ibantools.electronicFormatIBAN("NL91 ABNA 0417 1643 00");</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line304">line 304</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line308">line 308</a>
     </li></ul></dd>
     
 
@@ -540,7 +541,7 @@ ibantools.electronicFormatIBAN("NL91 ABNA 0417 1643 00");</code></pre>
 
 
 
-<div class="description">
+<div class="description usertext">
     extractBIC
 </div>
 
@@ -665,7 +666,7 @@ ibantools.extractBIC("ABNANL2A");</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line125">line 125</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line126">line 126</a>
     </li></ul></dd>
     
 
@@ -704,7 +705,7 @@ ibantools.extractBIC("ABNANL2A");</code></pre>
 
 
 
-<div class="description">
+<div class="description usertext">
     extractIBAN
 </div>
 
@@ -829,7 +830,7 @@ ibantools.extractIBAN("NL91 ABNA 0417 1643 00");</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line182">line 182</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line183">line 183</a>
     </li></ul></dd>
     
 
@@ -868,7 +869,7 @@ ibantools.extractIBAN("NL91 ABNA 0417 1643 00");</code></pre>
 
 
 
-<div class="description">
+<div class="description usertext">
     Get IBAN in friendly format (separated after every 4 characters)
 IBAN validation is not performed.
 When non-string value for IBAN is provided, returns null.
@@ -1021,7 +1022,7 @@ ibantools.friendlyFormatIBAN("NL91ABNA0417164300","-");</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line267">line 267</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line268">line 268</a>
     </li></ul></dd>
     
 
@@ -1060,7 +1061,7 @@ ibantools.friendlyFormatIBAN("NL91ABNA0417164300","-");</code></pre>
 
 
 
-<div class="description">
+<div class="description usertext">
     getCountrySpecifications
 Returns specifications for all countries, even those who are not
 members of IBAN registry. `IBANRegistry` field indicates if country
@@ -1151,7 +1152,7 @@ $("#countries").select(function() {
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line84">line 84</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line85">line 85</a>
     </li></ul></dd>
     
 
@@ -1190,7 +1191,7 @@ $("#countries").select(function() {
 
 
 
-<div class="description">
+<div class="description usertext">
     Validate if country code is from a SEPA country
 </div>
 
@@ -1318,7 +1319,7 @@ ibantools.isSEPACountry("PK");</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line57">line 57</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line58">line 58</a>
     </li></ul></dd>
     
 
@@ -1357,7 +1358,7 @@ ibantools.isSEPACountry("PK");</code></pre>
 
 
 
-<div class="description">
+<div class="description usertext">
     Validate BBAN
 </div>
 
@@ -1508,7 +1509,7 @@ ibantools.isValidBBAN("A7NA0517164300", "NL");</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line289">line 289</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line290">line 290</a>
     </li></ul></dd>
     
 
@@ -1547,7 +1548,7 @@ ibantools.isValidBBAN("A7NA0517164300", "NL");</code></pre>
 
 
 
-<div class="description">
+<div class="description usertext">
     Validate BIC/SWIFT
 </div>
 
@@ -1681,7 +1682,7 @@ ibantools.isValidBIC("ABNA NL 2A");</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line29">line 29</a>
+        <a href="ibantools.js.html">ibantools.js</a>, <a href="ibantools.js.html#line30">line 30</a>
     </li></ul></dd>
     
 
@@ -1720,7 +1721,7 @@ ibantools.isValidBIC("ABNA NL 2A");</code></pre>
 
 
 
-<div class="description">
+<div class="description usertext">
     Validate IBAN
 </div>
 
@@ -1851,7 +1852,7 @@ ibantools.isValidIBAN("NL92ABNA0517164300");</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Jun 21 2020 12:30:03 GMT+0200 (Central European Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Tue Nov 03 2020 22:55:39 GMT+0100 (Central European Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
